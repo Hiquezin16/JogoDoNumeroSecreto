@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.container__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.container__informacoes {
+    flex: 1;
+}
+
+.container__texto {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.container__texto-azul {
+    color: #38bdf8;
+}
+
+.texto__paragrafo {
+    font-size: 20px;
+    color: #cbd5e1;
+}
+
+.container__input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0f172a;
+    outline: none;
+}
+
+.container__botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.container__botao {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container__botao:hover {
+    background: #0ea5e9;
+}
+
+button:disabled {
+    background: #94a3b8;
+    color: #e2e8f0;
+    cursor: not-allowed;
+}
+
+.container__imagem-pessoa {
+    width: 220px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container__conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .texto__paragrafo {
+        font-size: 18px;
+    }
+
+    .container__botoes {
+        flex-direction: column;
+    }
+
+    .container__imagem-pessoa {
+        width: 180px;
+    }
+}
